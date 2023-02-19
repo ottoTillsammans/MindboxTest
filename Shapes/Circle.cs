@@ -19,7 +19,10 @@
 
         #region Constructors
 
-
+        public Circle(double radius)
+        {
+            this.radius = radius;
+        }
 
         #endregion
     }
