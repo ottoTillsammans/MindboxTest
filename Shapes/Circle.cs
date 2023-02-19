@@ -13,7 +13,7 @@
 
         #region Shape
 
-        public override double GetSquare() => 0;
+        public override double GetSquare() => radius * radius * Math.PI;
 
         #endregion
 

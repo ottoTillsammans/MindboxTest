@@ -15,10 +15,15 @@
 
         #endregion
 
+        #region
+
+        #endregion
+
         #region Shape
         public override double GetSquare()
         {
-            return 0;
+            var halfperimeter = (sideA + sideB + sideC) / 2;
+            return Math.Sqrt(halfperimeter * (halfperimeter - sideA) * (halfperimeter - sideB) * (halfperimeter - sideC));
         }
 
         #endregion
