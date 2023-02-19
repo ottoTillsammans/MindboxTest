@@ -5,9 +5,22 @@
     /// </summary>
     public class Circle : Shape
     {
-        public override double GetSquare()
-        {
-            return 0;
-        }
+        #region Fields and properties
+
+        private readonly double radius;
+
+        #endregion
+
+        #region Shape
+
+        public override double GetSquare() => 0;
+
+        #endregion
+
+        #region Constructors
+
+
+
+        #endregion
     }
 }
