@@ -21,7 +21,7 @@
         /// Check if the triangle is right angled.
         /// </summary>
         /// <returns>True if is right angled, otherwise false.</returns>
-        public bool isRightAngled()
+        public bool IsRightAngled()
         {
             throw new NotImplementedException();
         }
