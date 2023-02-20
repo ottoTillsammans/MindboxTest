@@ -13,6 +13,8 @@
 
         private readonly double sideC;
 
+        private const string errorMessage = "Triangle cannot have side euqal or less than zero";
+
         #endregion
 
         #region Methods
@@ -23,7 +25,11 @@
         /// <returns>True if is right angled, otherwise false.</returns>
         public bool IsRightAngled()
         {
-            throw new NotImplementedException();
+            if (sideA * sideA == sideB * sideB + sideC * sideC ||
+                sideB * sideB == sideA * sideA + sideC * sideC ||
+                sideC * sideC == sideA * sideA + sideB * sideB)
+                return true;
+            return false;
         }
 
         #endregion
@@ -42,9 +48,14 @@
 
         public Triangle(double sideA, double sideB, double sideC)
         {
-            this.sideA = sideA;
-            this.sideB = sideB;
-            this.sideC = sideC;
+            if (sideA > 0 && sideB > 0 && sideC > 0)
+            {
+                this.sideA = sideA;
+                this.sideB = sideB;
+                this.sideC = sideC;
+            }
+            else
+                throw new ArgumentException(errorMessage);
         }
 
         #endregion
