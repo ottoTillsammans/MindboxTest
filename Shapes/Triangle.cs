@@ -13,7 +13,7 @@
 
         private readonly double sideC;
 
-        private const string errorMessage = "Triangle cannot have side euqal or less than zero";
+        private const string errorMessage = "Triangle cannot have side equal or less than zero";
 
         #endregion
 
