@@ -15,11 +15,21 @@
 
         #endregion
 
-        #region
+        #region Methods
+
+        /// <summary>
+        /// Check if the triangle is right angled.
+        /// </summary>
+        /// <returns>True if is right angled, otherwise false.</returns>
+        public bool isRightAngled()
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion
 
         #region Shape
+
         public override double GetSquare()
         {
             var halfperimeter = (sideA + sideB + sideC) / 2;
